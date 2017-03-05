@@ -3,7 +3,7 @@ var http = require('http'),
 
 var server = http.createServer(function(req, res){
 
-	if('GET' == req.method 
+	if('GET' == req.method
 		&& '/images' == req.url.substr(0,7)
 		&& '.jpg' == req.url.substr(-4)
 	){
